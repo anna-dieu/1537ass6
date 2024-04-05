@@ -2,7 +2,7 @@ console.log("Client script loaded.");
 
 function fetchHTML() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/index', true);
+    xhr.open('GET', '/index.html', true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
@@ -20,7 +20,7 @@ function fetchHTML() {
 
 function fetchJSON() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/timelineData', true);
+    xhr.open('GET', '/timelineData.json', true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {

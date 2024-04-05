@@ -3,15 +3,14 @@ const app = express();
 app.use(express.json());
 const fs = require("fs");
 
-// just like a simple web server like Apache web server
 // we are mapping file system paths to the app's virtual paths
-app.use("/js", express.static("./js"));
-app.use("/css", express.static("./css"));
-app.use("/img", express.static("./img"));
+app.use("/js", express.static("/js"));
+app.use("/css", express.static("/css"));
+app.use("/img", express.static("/img"));
 
 
 app.get("/", function (req, res) {
-    let doc = fs.readFileSync("./app/html/index.html", "utf8");
+    let doc = fs.readFileSync("/index.html", "utf8");
 
     res.send(doc);
 });
@@ -27,7 +26,6 @@ app.get("/table-async", function (req, res) {
     // let usr = "nana";
     // let pwd = "ilikepython123";
     connection.connect();
-    connection.execute();
     let sql = "select a01275485_user.user_name, a01275485_user.email_address, a01275485_user_timeline.post_text, a01275485_user_timeline.views FROM a01275485_user_timeline INNER JOIN a01275485_user ON a01275485_user_timeline.user_id = a01275485_user.ID;"
         connection.query(sql, function(err, results, fields){
             if(err) throw err;
