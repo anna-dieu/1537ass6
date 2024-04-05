@@ -1,0 +1,11 @@
+{
+  "days": [
+    {"day": "Monday", "mandarin": "星期一"},
+    {"day": "Tuesday", "mandarin": "星期二"},
+    {"day": "Wednesday", "mandarin": "星期三"},
+    {"day": "Thursday", "mandarin": "星期四"},
+    {"day": "Friday", "mandarin": "星期五"},
+    {"day": "Saturday", "mandarin": "星期六"},
+    {"day": "Sunday", "mandarin": "星期日"}
+  ]
+}

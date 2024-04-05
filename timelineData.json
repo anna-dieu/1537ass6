@@ -1,0 +1,154 @@
+{
+  "assignment6": {
+    "A01275485_user": [
+      {
+        "ID": 1,
+        "user_name": "nana",
+        "first_name": "Anna",
+        "last_name": "Dao",
+        "email_address": "anna.dao16@gmail.com",
+        "password": "ilikepython123"
+      },
+      {
+        "ID": 2,
+        "user_name": "zhanghao",
+        "first_name": "Hao",
+        "last_name": "Zhang",
+        "email_address": "zhanghao@example.com",
+        "password": "violin123"
+      },
+      {
+        "ID": 3,
+        "user_name": "heidi",
+        "first_name": "Heidi",
+        "last_name": "Ho-Man",
+        "email_address": "heidi@example.com",
+        "password": "heidi123"
+      },
+      {
+        "ID": 4,
+        "user_name": "suzy",
+        "first_name": "Susan",
+        "last_name": "Ts",
+        "email_address": "suzy@example.com",
+        "password": "suzy123"
+      },
+      {
+        "ID": 5,
+        "user_name": "cyndy",
+        "first_name": "Cyndy",
+        "last_name": "Ph",
+        "email_address": "cyndy@example.com",
+        "password": "cyndy123"
+      },
+      {
+        "ID": 6,
+        "user_name": "jenny",
+        "first_name": "Jenny",
+        "last_name": "Ch",
+        "email_address": "Jenny@example.com",
+        "password": "jenny123"
+      }
+    ],
+    "A01275485_user_timeline": [
+      {
+        "ID": 1,
+        "user_id": 1,
+        "date_post": "2024-03-20",
+        "post_text": "Today, I went hiking with my friends! The weather was beautiful. ",
+        "time_post": "12:30:00",
+        "views": 12
+      },
+      {
+        "ID": 2,
+        "user_id": 1,
+        "date_post": "2024-03-23",
+        "post_text": "Currently working on my WEBDEV assignment",
+        "time_post": "15:45:00",
+        "views": 20
+      },
+      {
+        "ID": 3,
+        "user_id": 2,
+        "date_post": "2024-03-20",
+        "post_text": "I finished my violin recital, I will be performing at a wedding!",
+        "time_post": "09:20:00",
+        "views": 7118
+      },
+      {
+        "ID": 4,
+        "user_id": 2,
+        "date_post": "2024-03-22",
+        "post_text": "I have a concert tonight so I have to fly to the city.",
+        "time_post": "14:10:00",
+        "views": 9200
+      },
+      {
+        "ID": 5,
+        "user_id": 3,
+        "date_post": "2024-03-21",
+        "post_text": "I just arrived in Seoul and got a nice warm bowl of soup!",
+        "time_post": "17:00:00",
+        "views": 550
+      },
+      {
+        "ID": 6,
+        "user_id": 3,
+        "date_post": "2024-03-23",
+        "post_text": "Currently shopping around Myeongdong, I found good deals!",
+        "time_post": "11:55:00",
+        "views": 430
+      },
+      {
+        "ID": 7,
+        "user_id": 4,
+        "date_post": "2024-03-22",
+        "post_text": "Drowning in my workload, excited for the weekend.",
+        "time_post": "10:40:00",
+        "views": 67
+      },
+      {
+        "ID": 8,
+        "user_id": 4,
+        "date_post": "2024-03-23",
+        "post_text": "My room mate went away for a trip, time to cuddle the cats.",
+        "time_post": "13:20:00",
+        "views": 72
+      },
+      {
+        "ID": 9,
+        "user_id": 5,
+        "date_post": "2024-03-23",
+        "post_text": "Drowning in my assignments, excited for finals to be over.",
+        "time_post": "13:20:00",
+        "views": 72
+      },
+      {
+        "ID": 10,
+        "user_id": 5,
+        "date_post": "2024-03-24",
+        "post_text": "I want to eat some hotpot...",
+        "time_post": "09:30:00",
+        "views": 85
+      },
+      {
+        "ID": 11,
+        "user_id": 6,
+        "date_post": "2024-02-20",
+        "post_text": "I am so tired, I wanna order some takeout instead of cooking.",
+        "time_post": "18:00:00",
+        "views": 42
+      },
+      {
+        "ID": 12,
+        "user_id": 6,
+        "date_post": "2024-03-05",
+        "post_text": "No work today, I wonder what my friends are up to.",
+        "time_post": "12:00:00",
+        "views": 38
+      }
+    ]
+  }
+}
+
+

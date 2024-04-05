@@ -1,0 +1,230 @@
+:root {
+  --main-radius: 10px;
+  --main-padding: 10px;
+}
+
+body {
+  font-family: 'Source Serif 4', serif;
+  background-color: #e7e4f0;
+}
+
+.flower{
+    border: 10px solid #fffaf0;
+}
+.fansite{
+  border:10px solid #f8f8ff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.video{
+  border:10px solid #7b68ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main content1 content2 content3"
+    "footer footer footer footer";
+    
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  font-size: 12px;
+  color: #004d40;
+  text-align: center;
+  font-family: 'Source Serif 4', serif;
+}
+
+
+.full-width img {
+    width: 100%;
+    height: auto;
+}
+nav {
+  background: #c9c9ff;
+  grid-area: nav;
+  border-radius: 10px;
+  padding-top: 10px;
+  font-family: 'Source Serif 4', serif;
+}
+
+nav {
+    background-color: #3F3D56; /* Background color of the navbar */
+    padding: 1px 0; /* Adjust padding as needed */
+    text-align: center; /* Center-align the links */
+}
+
+nav a {
+    color: #fff; 
+    text-decoration: none; 
+    padding: 1px 2px; 
+    display: inline-block;
+}
+
+#violin{
+    opacity: 0.0;
+}
+h1{
+    justify-content: center;
+    text-align: center;
+    
+}
+
+script{
+    justify-content: center;
+    align-content: center;
+}
+main {
+  background-image: url(violinmama.jpg);
+  background-position: center;
+  background-size: cover;
+  align-content: center;
+  justify-content: center;
+  color: mediumorchid;
+  height: 60%; 
+  width: 100%;
+  grid-area: main;
+  border-radius: 10px;
+  padding-top: 5px;
+  font-family: 'Source Serif 4', serif;
+}
+
+#content1,
+#content2,
+#content3 {
+  background: #c9c9ff;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Source Serif 4', serif;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+#content1.flower{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content1{
+  font-family: "Raleway", sans-serif;
+}
+
+#content2 {
+  background: #e3e3ff;
+  font-family: "Raleway", sans-serif;
+
+}
+#content3{
+  font-family: "Raleway", sans-serif;
+}
+img {
+  display:block;
+  margin:auto;
+}
+
+
+iframe{
+  display:block;
+  margin:auto;
+}
+
+h2{
+text-align: center;
+
+}
+footer {
+  background: #ece6ff;
+  grid-area: footer;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Source Serif 4', serif;
+}
+/* Style for buttons */
+button {
+    padding: 10px 15px;
+    background-color: #3F3D56;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px; 
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+a {
+  text-align: center;
+  display: block;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 701px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 2.2fr 1.2fr 1.2fr 1.2fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+  nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    margin-left: 0;
+  
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1280px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "main main main main"
+      "content1 content2 content3"
+      "footer footer footer footer";
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+      "nav nav nav nav"
+      "main content1 content2 content3"
+      "footer footer footer footer";
+  }
+}
+}
