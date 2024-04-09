@@ -43,11 +43,14 @@ app.get("/table-async", function (req, res) {
         table += "</table>";
         res.send(table); // Sending the table back to the client
     });
+
+    connection.end(); // Close the MySQL connection after querying
 });
 
-let port = 8000;
+const port = process.env.PORT || 8000; // Make the port configurable
 app.listen(port, function () {
     console.log("Listening on port " + port + "!");
 });
+
 
 

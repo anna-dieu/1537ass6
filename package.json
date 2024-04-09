@@ -1,18 +1,18 @@
 {
   "name": "public",
   "version": "1.0.0",
-  "description": "(COMP1537ass4)",
-  "main": "app.js",
+  "description": "(COMP1537ass6)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
+  "repositoryx": {
     "type": "git",
     "url": "anna-dieu"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.3"
+    "express": "^4.18.3",
+    "mysql2": "^3.9.3"
   }
 }
