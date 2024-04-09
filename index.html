@@ -31,12 +31,9 @@
     </form> 
     <!--added button for table data~-->
     <div id="buttons">
-        <button> Table </button>
+        <button id="tableButton">Table</button>
     </div>
-    <div id="table"></div>
 </main> <br> <br> 
-        
-<div id="buttons"></div>
 
 <div id="table">
 
@@ -85,13 +82,12 @@
     </footer>
 </div>
 
-<!-- <script src="assignment4.js"></script>  -->
-
-<script src="index.js"></script>
-
 <!-- <script src="assignment6.sql"></script> -->
 
 <script src="client.js"></script>
+<script src="index.js"></script>
+
+
 
 
 
@@ -182,7 +178,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to fetch table data from the server
+    function fetchTableData() {
+        const tableXhr = new XMLHttpRequest();
+        tableXhr.open('GET', 'http://localhost:8000/table-async');
+        tableXhr.onload = function() {
+            if (tableXhr.status === 200) {
+                document.getElementById('table').innerHTML = tableXhr.responseText;
+            } else {
+                console.error('Error:', tableXhr.statusText);
+            }
+        };
+        tableXhr.send();
+    }
+
+    // Add event listener to the "Table" button
+    document.getElementById('tableButton').addEventListener('click', fetchTableData);
+});
+
 </script>
+
+</body>
 </html>
-
-
